@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="myDiv">
+    <img src= "{{ url_for('static', filename='img/IMG_8271.JPG' ) }}" alt="" class="center">
+    <h1>Anisah Delmonte</h1>
+    <p>@an1sah_</p>
+    <p>St. Catherine, Jamaica.</p>
+        Joined {{ date }}
+</div>
+
+<div id="info">
+    <p>I am a 21 year old Computer Science major at the University of the West Indies, with specific interest in data analytics. </p>
+       
+    <div class="insight"> 
+        <div>
+            <b id="count">9 </b>
+            <p id="label"> Posts</p>
+        </div>
+        <div>
+            <b id="count">100 </b>
+            <p id="label"> Following</p>
+        </div>
+        <div>
+            <b id="count">250 </b>
+            <p id="label"> Followers</p>
+        </div>
+    </div>
+    <a href="#" class="bgn">Follow</a>
+</div>
+{% endblock %}
